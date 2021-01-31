@@ -2,12 +2,18 @@
   "name": "babel-parser-minimal",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "module": "./dist/babel-parser.js",
+  "exports": {
+    "import": "./dist/babel-parser.js"
+  },
   "scripts": {
     "build": "node build-babel-public-props.js && rollup -c rollup.config.js",
     "test": "jest",
     "test:watch": "jest --watch"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "",
   "license": "MIT",

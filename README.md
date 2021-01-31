@@ -1,6 +1,6 @@
 # @babel/parser minimal bundle
 
-This is a minimal build of [`@babel/parser,`](https://babeljs.io/docs/en/babel-parser) with most of the non-standard/proposal features stripped out. It is heavily minified and any unused code is attempted to be removed. It should work exactly the same as `@babel/parser` (except for unsupported plugins), and any case where it emits different output is a bug.
+This is a minimal build of [`@babel/parser`](https://babeljs.io/docs/en/babel-parser), with most of the non-standard/proposal features stripped out. It is heavily minified and any unused code is attempted to be removed. It should work exactly the same as `@babel/parser` (except for unsupported plugins), and any case where it emits different output is a bug.
 
 It includes support for TypeScript and JSX, as well as standardized modern features. It does not support most proposals.
 
@@ -36,6 +36,12 @@ Unsupported plugins:
 - `classStaticBlock`
 - `decorators-legacy`
 - `exportDefaultFrom`
+
+## Install
+
+```
+npm i -D babel-parser-minimal
+```
 
 ## API
 
