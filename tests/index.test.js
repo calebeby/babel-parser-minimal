@@ -27,3 +27,10 @@ test('parses JSX', () => {
   const ast = parse(input, opts)
   expect(ast).toEqual(babelParse(input, opts))
 })
+
+test('passes options', () => {
+  const input = 'return "hi"'
+  const opts = { allowReturnOutsideFunction: true }
+  const ast = parse(input, opts)
+  expect(ast).toEqual(babelParse(input, opts))
+})

@@ -6,6 +6,11 @@ const main = async () => {
     'utf8',
   )
 
+  const parserTypesFile = await fs.readFile(
+    'node_modules/@babel/parser/typings/babel-parser.d.ts',
+    'utf8',
+  )
+
   const parserFile = await fs.readFile(
     'node_modules/@babel/parser/lib/index.js',
     'utf8',
@@ -34,6 +39,10 @@ const main = async () => {
   }
 
   if ((match = /interface SourceLocation {[^}]*}/gm.exec(typesFile))) {
+    getPropsFromInterface(match[0])
+  }
+
+  if ((match = /interface ParserOptions {[^}]*}/gm.exec(parserTypesFile))) {
     getPropsFromInterface(match[0])
   }
 
