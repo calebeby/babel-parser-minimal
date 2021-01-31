@@ -7,6 +7,7 @@ It includes support for TypeScript and JSX, as well as standardized modern featu
 Supported plugins:
 
 - `functionSent`
+- `estree`
 - `classProperties`
 - `classPrivateProperties`
 - `classPrivateMethods`
@@ -19,7 +20,6 @@ Unsupported plugins:
 
 - `placeholders`
 - `flow`
-- `estree`
 - `decorators`
 - `v8intrinsic`
 - `importAssertions`

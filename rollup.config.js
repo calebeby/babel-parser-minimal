@@ -11,7 +11,6 @@ import annotateAsPure from '@babel/helper-annotate-as-pure'
 const excludePlugins = new Set([
   'placeholders',
   'flow',
-  'estree',
   'decorators',
   'v8intrinsic',
   'importAssertions',
@@ -30,6 +29,7 @@ const excludePlugins = new Set([
   'exportDefaultFrom',
 ])
 const includePlugins = new Set([
+  'estree',
   'functionSent',
   'classProperties',
   'classPrivateProperties',
